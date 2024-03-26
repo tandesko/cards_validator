@@ -1,5 +1,5 @@
-# Cards verificator
+# Cards validator
 
 ## Description
 
-Cards verificator verifies credit cards by its number, month and year
+Cards validator verifies credit cards by validating its number, month and year
