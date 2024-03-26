@@ -1,0 +1,12 @@
+version: '3.3'
+
+services:
+  cards_validator:
+    build: .
+    environment:
+      - KV_VIPER_FILE=/config.yaml
+    volumes:
+      - ./config.yaml:/config.yaml
+    entrypoint: sh -c "cards_validator run service"
+    ports:
+      - "8065:8065"
