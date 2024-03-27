@@ -3,7 +3,7 @@ package cli
 import (
 	"github.com/alecthomas/kingpin"
 	"github.com/tandesko/cards_validator/internal/config"
-	"github.com/tandesko/cards_validator/internal/service"
+	"github.com/tandesko/cards_validator/internal/service/api"
 	"gitlab.com/distributed_lab/kit/kv"
 	"gitlab.com/distributed_lab/logan/v3"
 )
@@ -36,7 +36,7 @@ func Run(args []string) bool {
 	switch cmd {
 	case serviceCmd.FullCommand():
 		log.Info("started api...")
-		service.Run(cfg)
+		api.Run(cfg)
 	default:
 		log.Errorf("unknown command %s", cmd)
 	}

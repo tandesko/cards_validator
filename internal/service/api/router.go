@@ -1,9 +1,9 @@
-package service
+package api
 
 import (
 	"github.com/go-chi/chi"
-	"github.com/tandesko/cards_validator/internal/service/handlers"
-	"github.com/tandesko/cards_validator/internal/service/helpers"
+	"github.com/tandesko/cards_validator/internal/service/api/handlers"
+	"github.com/tandesko/cards_validator/internal/service/api/helpers"
 	"gitlab.com/distributed_lab/ape"
 )
 

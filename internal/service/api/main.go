@@ -1,4 +1,4 @@
-package service
+package api
 
 import (
 	"github.com/tandesko/cards_validator/internal/config"
